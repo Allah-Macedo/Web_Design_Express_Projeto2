@@ -1,0 +1,73 @@
+* {margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; font-family: 'Roboto', sans-serif;}
+.clear {clear: both;}
+.box {max-width: 1120px; margin: 0 auto; padding: 0 2%;}
+.w50 {width: 50%; padding-right: 15px;}
+.w33 {width: 33.3%;}
+.selected {padding-bottom: 5px; border-bottom: 2px solid chartreuse;}
+.selected_mobile {background: rgb(136, 209, 136);}
+.float_left {float: left;}
+
+/* header */
+header {padding: 10px 0; background:rgb(94, 62, 161);}
+header div.box {display: flex;}
+header div.logo h1 {font-size: 18pt; font-weight: normal; color: rgb(128, 255, 0);}
+header div.menu {text-align: right;}
+header div.menu ul {position: relative; top: 3px;}
+header div.menu li {display: inline-block; padding: 0 10px;}
+header div.menu a {font-size: 13pt; color: white;}
+header div.menu a:hover {color: rgb(212, 209, 209);}
+
+header div.menu_mobile {display: none;}
+header div.menu_mobile i {display: inline-block; position: relative; color: white; font-size: 20pt; top: 0px; cursor: pointer;}  
+header div.menu_mobile div.logo_mobile {display: inline-block; position: absolute; left: 45%; transform: translate(-30%);}
+header div.menu_mobile div.logo_mobile h1 {font-size: 15pt; color: rgb(128, 255, 0);}
+header div.menu_mobile ul {position: absolute; display: none; left: 0; top: 44px; text-align: center; width: 100%; background: rgb(131, 91, 218);}
+header div.menu_mobile li {border-top: 1px solid white; list-style: none;}
+header div.menu_mobile a {display: block; padding: 20px 0; color: white; font-size: 16pt;}
+header div.menu_mobile a:hover {color: rgb(173, 165, 165);}
+
+/* chamada */ 
+section.chamada {padding: 30px 0; text-align: center; background:#4c3282;}
+section.chamada i {font-size: 30pt; color: white;}
+section.chamada h2 ,
+section.chamada h3{color: white; font-weight: normal;}
+section.chamada b {color: rgb(231, 66, 107);}
+
+/* vitrine */
+section.vitrine {padding: 30px 0; background: rgb(225, 225, 225);}
+section.vitrine div.box {display: flex; flex-wrap: wrap;}
+section.vitrine div.box_modal {padding: 20px; max-width: 500px;}
+section.vitrine div.box_modal a {display: block; padding: 10px; background: #5fb382; color: white; text-align: center;}
+section.vitrine div.conteudo_modal {border: 1px solid #5fb382;}
+section.vitrine div.conteudo_modal img {width: 100%;}
+section.vitrine div.conteudo_modal h2 {text-align: center; margin-bottom: 15px;}
+section.vitrine div.conteudo_modal p {font-size: 12pt; text-align: left; margin-bottom: 40px; padding: 0 5px;}
+
+/* noticias_depoinentos */
+section.noticias_depoinentos {padding: 30px 0; background: rgb(225, 225, 225);}
+section.noticias_depoinentos h1 {margin-bottom: 15px; color: rgb(71, 68, 68); font-weight: normal; font-size: 20pt;}
+section.noticias_depoinentos div.box_niticias {border: 1px dotted #ccc; padding: 15px 0;}
+section.noticias_depoinentos div.box_niticias h2 {color: rgb(85, 82, 82); font-weight: normal;}
+section.noticias_depoinentos div.box_niticias p {color: rgb(100, 100, 100);}
+section.noticias_depoinentos div.depoimentos {padding-left: 15px;}
+section.noticias_depoinentos div.depoimentos li {list-style: inside; padding: 8px 0; color:rgb(100, 100, 100);}
+
+/* footer */
+footer {padding: 20px 0; background: #4C3282;}
+footer p {font-size: 13pt; color: white;}
+footer div.p2 p:nth-child(1) {text-align: right;}
+
+/* media query */
+@media (max-width: 768px){
+    header div.logo,
+    header div.menu {display: none;}
+    header div.menu_mobile {display: block;}
+
+    section.vitrine div.box_modal {margin: 0 auto;}
+
+    footer {text-align: center;}
+    footer div.p2 p:nth-child(1) {text-align: center;}
+
+    .w33 {width: 100%;}
+    .w50 {width: 100%; padding: 15px;}
+}
